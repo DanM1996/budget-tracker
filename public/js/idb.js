@@ -25,7 +25,7 @@ function saveRecord(record) {
     const budgetObjectStore = transaction.objectStore('new_balance');
 
     budgetObjectStore.add(record);
-}
+};
 
 function uploadBudget() {
     const transaction = db.transaction(['new_balance'], 'readwrite');
